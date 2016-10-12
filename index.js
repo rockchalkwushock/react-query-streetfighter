@@ -3,5 +3,5 @@ import ReactDOM from 'react-dom';
 
 document.addEventListener('DOMContentLoaded', () => {
     ReactDOM.render(
-        </*Component Here*/>, document.getElementById('app'));
+        <StreetFigther />, document.getElementById('app'));
 });

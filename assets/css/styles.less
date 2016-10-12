@@ -1,0 +1,187 @@
+@black: black;
+@white: white;
+@dodger: DodgerBlue;
+@default: Georgia, Verdana;
+@ctr: center;
+@no-rpt: no-repeat;
+@height: 500px;
+@width: 600px;
+@abs: absolute;
+@rel: relative;
+@100: 100%;
+@none: none;
+@m-top: 50px;
+@font: "My Custom Font";
+@font2: "My Custom Font_2";
+@ryu-ready: url('../img/ryu-ready-position.gif');
+@ryu-still: url('../img/ryu-standing-still.png');
+@ryu-throwing: url('../img/ryu-throwing-hadouken.png');
+@ryu-cool: url('../img/ryu-cool.gif');
+@hadouken: url('../img/hadouken.gif');
+@streetfighter: url('../images/Street_Fighter_Logo.png');
+@disney: url('../images/disney.gif');
+@jquery: url('../images/jquery-logo.png');
+@walt: url("../text/NewWalt1003.ttf") format("truetype");
+@streetcred: url("../text/streetcred.ttf") format("truetype");
+
+body {
+    background-color: @black;
+}
+
+.main {
+    background-color: @white;
+    position: @rel;
+    height: @height;
+    margin-top: 110px;
+    padding-left: 100px;
+    min-width: 1200px;
+    z-index: 1;
+}
+
+.animation-container,
+.ryu {
+    float: left;
+}
+
+.ryu-cool,
+.ryu-ready,
+.ryu-still,
+.ryu-throwing {
+    width: 659px;
+    height: 494px;
+}
+
+.disney,
+.hadouken,
+.jquery,
+.ryu-cool,
+.ryu-ready,
+.ryu-throwing,
+.street-fighter,
+.text,
+.text2 {
+    display: @none;
+}
+
+.ryu-ready {
+    background-image: @ryu-ready;
+}
+
+.ryu-still {
+    background-image: @ryu-still;
+}
+
+.ryu-throwing {
+    background-image: @ryu-throwing;
+}
+
+.ryu-cool {
+    background-image: @ryu-cool;
+}
+
+,
+.disney,
+.hadouken,
+.jquery,
+.ryu-ready,
+.ryu-still,
+.ryu-throwing,
+.street-fighter,
+.text,
+.text2 {
+    background-repeat: @no-rpt;
+}
+/*---------- Hadouken Positions ----------*/
+.hadouken {
+    background-image: @hadouken;
+    width: 156px;
+    height: 90px;
+    position: @abs;
+    z-index: 10;
+    top: 165px;
+    left: 699px;
+    float: left;
+}
+/*---------- Logos ----------*/
+.logos {
+    position: @abs;
+    left: 700px;
+    height: 425px;
+    width: 600px;
+    padding-top: 75px;
+}
+
+.disney,
+.jquery,
+.street-fighter,
+.text,
+.text2 {
+    height: @height;
+    width: @width;
+}
+
+.disney,
+.jquery,
+.street-fighter {
+    max-width: @100;
+    max-height: @100;
+    margin-top: @m-top;
+}
+
+.street-fighter {
+    background-image: @streetfighter;
+}
+
+.disney {
+    background-image: @disney;
+}
+
+.jquery {
+    background-image: @jquery;
+}
+@font-face {
+    font-family: @font;
+    src: @walt;
+}
+@font-face {
+    font-family: @font2;
+    src: @streetcred;
+}
+
+.customfont {
+    font-family: @font, Verdana, Tahoma;
+}
+
+.customfont2 {
+    font-family: @font2, Verdana, Tahoma;
+}
+
+.text,
+.text2 {
+    font-size: 500%;
+    font-weight: bold;
+    color: @dodger;
+    text-align: @ctr;
+}
+
+.text {
+    margin-top: 100px;
+}
+/*---------- Instructions for User ----------*/
+.caption-text {
+    float: left;
+    padding-left: 100px;
+}
+
+.caption-text ul {
+    list-style-type: @none;
+}
+
+.one,
+.three,
+.two {
+    display: @none;
+    color: @dodger;
+    font-family: @default;
+    font-size: 20px;
+}
